@@ -2,8 +2,12 @@
 
 int main()
 {
-    int n,i,j,k,i1,j1,k1;
-    printf("enter size of array:");
+    int n,i,j,k,i1,j1,k1,t,flag=-1;
+    scanf("%d",&t);
+    int c=0;
+    while(c<t)
+    {
+    printf("\nenter size of array:");
     scanf("%d",&n);
     int ar[n];
     printf("enter elements in array:");
@@ -17,6 +21,7 @@ int main()
                    {
                        if(ar[i]+ar[j]==ar[k])
                        {
+                           flag=1;
                            i1=i;
                            j1=j;
                            k1=k;
@@ -25,6 +30,10 @@ int main()
                    }
               }
          }
-
-    printf("the i,j,k indexes are: %d %d %d",i1,j1,k1);
+         if(flag==1)
+            printf("the i,j,k indexes are: %d %d %d",i1,j1,k1);
+         else
+            printf("no sequence found");
+    c++;
+    }
 }
