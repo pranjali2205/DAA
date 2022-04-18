@@ -1,8 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j,key,index,found=-1,count=0;
-    printf("enter size of array:");
+    int n,i,j,key,index,found=-1,t;
+
+    scanf("%d",&t);
+    int k=0;
+    while(k<t)
+          {
+int count=0;
+    printf("\nenter size of array:");
     scanf("%d",&n);
     int ar[n];
     printf("enter elements in array:");
@@ -31,5 +37,7 @@ int main()
     }
     else
         printf("not present");
+            k++;
+          }
 
 }
