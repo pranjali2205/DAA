@@ -15,7 +15,7 @@ int main()
               {
                    for(k=0;k<n;k++)
                    {
-                       if(i+ar[j]==ar[k])
+                       if(ar[i]+ar[j]==ar[k])
                        {
                            i1=i;
                            j1=j;
