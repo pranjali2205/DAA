@@ -2,7 +2,10 @@
 
 int main()
 {
-    int n,i,j,key,count=0;
+    int n,i,j,key,count=0,t,c=0;
+    scanf("%d",&t);
+    while(c<t)
+    {
     printf("enter size of array:");
     scanf("%d",&n);
     int ar[n];
@@ -20,4 +23,6 @@ int main()
         }
     }
     printf("\ntotal pair whose diff is equal to key are:%d",count);
+    c++;
+    }
 }
